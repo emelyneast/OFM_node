@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  color: #000000;
+  font-family: 'Comfortaa', cursive;;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+html, body {
+  height: 100%;
+  
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #ccc9ff 50%, #fffce1 50%);
+
+}
+
+header {
+  padding: 1rem;
+}
+
+main {
+  line-height: 3em;
+  display: flex;
+  flex: 1;
+
+
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+#page{
+  flex: 1;
+  display: flex;
+  margin: 10em;
+  background-color: #fffef6;
+  border-radius: 2em;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#connexion{
+  border-radius: 2em 0 0 2em;
+  flex-grow: 0.5;
+  background-color: #6B63FF;
+  transition-property: box-shadow background-color;
+  transition-duration: 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .envoyer{
+    background-color: #fffef6;
+  }
+  
+  a{
+    font-weight: bold;
+  }
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#connexion:hover{
+    background-color: #d88df7;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+#formulaire{
+  flex-grow: 0.5;
+  text-align: center;
+  align-self: center;
+  h1{
+    color: #6B63FF;
+  }
+  .envoyer{
+    background-color: #6B63FF;
+   
+  }
+  
+  .saisi{
+    margin: auto;
+    border-radius: 2em;
+  }
+}
+
+
+h1{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.envoyer{
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-weight: bold;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  width: 10em;
+  transition-property: font-size box-shadow width;
+}
+.envoyer:hover{
+  width: 11em;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  font-size: 1.7rem;
+}
+
+
+
+.reseau{
+  background-color: #bffdbe;
+  border-radius: 0.4em;
+  font-size: 1.5rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.saisi{
+  background-color: #bbb8fb;
+  border: 0.1rem solid;
+  border-color: #9f9bf5;
+  line-height: 1em;
+  width: 20em;
+  input{
+    background-color: #bbb8fb;
+    font-size: 20px;
+    border: none;
+  }
+}
+
+.errorSaisi{
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* ##### MEDIA QUERIES ##### */
+/* Tablets (sm) */
+@media screen and (min-width: 768px) {
+  
+}
+/* Laptops (md) */
+@media screen and (min-width: 992px) {
+  
+}
+/* Desktops (lg) */
+@media screen and (min-width: 1200px) {
+  
+}

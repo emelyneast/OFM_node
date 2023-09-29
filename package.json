@@ -1,0 +1,16 @@
+{
+  "name": "ofm_final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GameWork",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1",
+    "zip-lib": "^0.7.2"
+  }
+}

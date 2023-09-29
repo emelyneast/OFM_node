@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+
+		<!-- Google Fonts -->
+		
+
+		<!-- Generic -->
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Description">
+		<!-- <link id="favicon" rel="icon" type="image/png" href="img/icon.png"/> -->
+		<link rel="stylesheet" href="css/clientAccount.pages.css"/>
+		<title>Project</title>
+	</head>
+	<body>
+		<main>
+			<div id="page">
+				<div id="connexion">
+					<h1>Bienvenue !</h1>
+					<label>Inscris toi !</label>
+					<br>
+					<button class="envoyer"><a href="inscription.html">Inscription</a></button>
+				</div>
+				<div id="formulaire">
+					<h1>Connect toi</h1>
+					<a class="reseau"> <i class="fab fa-facebook"></i></a>
+					<a class="reseau"> <i class="fab fa-twitter"></i></a>
+					<a class="reseau"> <i class="fab fa-instagram"> </i></a>
+					<br>
+					<div id="errors"></div>
+					<div class="saisi">
+						<i class="fas fa-baby"></i><input type="text" name="nom" id="pseudo"placeholder="pseudo" />
+					</div>
+					<br>
+					<div class="saisi">
+						<i class="fas fa-lock"></i><input type="password" name="pwd" id="password" placeholder=" Password" />
+					</div>
+					<br>
+					
+					<button id="submit" class="envoyer"> Connexion </button>
+				</div>
+			</div>
+		</main>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/socket.io.min.js"></script>
+		<script src="js/client.js"></script>
+		<script src="js/connexion.page.js"></script>
+	</body>
+</html>

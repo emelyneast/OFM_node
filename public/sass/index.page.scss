@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F9FA;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.25rem;
+  text-align: left;
+  h3{
+    font-weight: bold;
+    font-size: 1.25rem;
+    width: 15vw;
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  }
+  #breadcrumb{
+    padding: 1.25rem;
+    flex: 2;
+    font-size: 15px;
+  }
+  #secondaryMenu{
+    flex: 3;
+    text-align: right;
+  }
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
+
+footer {
+  padding: 1,5rem;
+  text-align: center;
+}
+
+#render{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap:  1.5rem;
+  padding: 1.25rem;
+}
+
+#menu{
+  display: flex;
+  gap: 0.2rem;
+  flex-direction: column;
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  a, span{
+    padding: 1rem 0;
+    i{
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.dashboard__item{
+  border-radius: 1rem;
+  padding: 0.75rem;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.dashboardElement{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 6rem;
+  height: 8rem;
+  border: solid 1px #000000;
+  border-radius: 1rem;
+  &__imageContainer{
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 5rem;
+    }
+  }
+  &__filename {
+    position: relative;
+    span {
+      display: inline-block;
+      font-size: 0.75rem;
+      word-break: break-all;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      &:hover::after {
+        content: attr(data-tooltype);
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 0.3rem;
+        color: white;
+        background-color: #333333;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  &__actions {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    button i {
+      font-size: 1rem;
+    }
+  }
+}
+
+#top{
+  flex: 1;
+}
+
+#rocket{
+  gap: 0.75rem;
+  display: flex;
+  flex-direction: rew;
+  justify-content: space-between;
+  flex: 3;
+  &__content{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    h2 {
+      font-weight: bold;
+    }
+  }
+  &__image{
+    display: flex;
+    padding: 1.25rem 2.5rem;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(135deg, #FF3CAC 0%, #712bc5 100%);
+    border-radius: 1rem;
+    img{
+      align-self: center;
+    }
+  }
+}
+
+#addFileButton, #addFolderButton{
+  font-size: 2rem;
+  margin: 0 auto;
+}
+#UploadArea{
+  display: flex;
+  flex-direction: column;
+}
+
+#UploadBox{
+  display: flex;
+  flex-direction: column;
+}
+
+#addFilePanel{
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #FFFFFF;
+  border: 2px solid #3498DB;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: translate(-50%, -50%);
+  i{
+    font-size: 1.5rem;
+    color: #E74C3C;
+  }
+  a{
+    text-align: right;
+  }
+  h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #3498DB; 
+  }
+  button{
+    width: fit-content;
+    color: #FFFFFF;
+    margin-left: auto;
+    background-color: #3498DB;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+#choiceFile, #choiceNameFile{
+  display: flex;
+  flex-direction: row;
+  padding: 0.25rem;
+  input{
+    padding-left: 10px;
+  }
+}
+
+#choiceNameFile{
+  input{
+    border: 1px solid;
+  }
+}
+
+
+/* ##### MEDIA QUERIES ##### */
+/* Tablets (sm) */
+@media screen and (min-width: 768px) {
+  
+}
+/* Laptops (md) */
+@media screen and (min-width: 992px) {
+  
+}
+/* Desktops (lg) */
+@media screen and (min-width: 1200px) {
+  
+}
